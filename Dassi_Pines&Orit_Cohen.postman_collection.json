@@ -1,0 +1,887 @@
+{
+	"info": {
+		"_postman_id": "14408a3d-d053-43d3-8af8-31fe69ad6a0f",
+		"name": "Buls&Pgias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39543814"
+	},
+	"item": [
+		{
+			"name": "1  add player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"111111111\",\r\n    \"name\":\"orit\",\r\n    \"password\":\"Ocz1234\",\r\n    \"email\":\"orit@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/players/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2   player alrady exist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"111111111\",\r\n    \"name\":\"orit\",\r\n    \"password\":\"Ocz1234\",\r\n    \"email\":\"orit@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/players/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3   add player 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"222222222\",\r\n    \"name\":\"dassi\",\r\n    \"password\":\"Dp1234\",\r\n    \"email\":\"dassi@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/players/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4   add player 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"333333333\",\r\n    \"name\":\"Hadassa\",\r\n    \"password\":\"Hh1234\",\r\n    \"email\":\"Hadassa@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/players/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5   add player invalid input",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"444444444\",\r\n    \"name\":\"Sara\",\r\n    \"password\":\"s\",\r\n    \"email\":\"Hadassa@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/players/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6   get player",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/players/111111111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"111111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7   delete player 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/players/222222222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"222222222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8   player not found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/players/222222222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"222222222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9   update player 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"Ocz1234\",\r\n   \"email\":\"oritcz@gmail.com\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/players/111111111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"111111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10    start game player 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\":\"111111111\",\r\n    \"password\":\"Ocz1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11   start game 2 player 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\":\"111111111\",\r\n    \"password\":\"Ocz1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12   start game 3  player 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\":\"333333333\",\r\n    \"password\":\"Hh1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13   start game worng pass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\":\"333333333\",\r\n    \"password\":\"Hh11111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14   send guesses game 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{                                        \r\n  \"guessNumbers\": [7,8,1,9]\r\n}\r\n\r\n               ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/1/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"1",
+						"guess"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "send guesses game 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{                                        \r\n  \"guessNumbers\": [8,0,6,1]\r\n}\r\n\r\n               ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/games/5/guess                                                                                                                      ,                                                                                                                                                                                                                                         ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"games",
+								"5",
+								"guess                                                                                                                      ,                                                                                                                                                                                                                                         "
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "send guesses game 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{                                        \r\n  \"guessNumbers\": [8,0,6,1]\r\n}\r\n\r\n               ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/games/5/guess                                                                                                                      ,                                                                                                                                                                                                                                         ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"games",
+								"5",
+								"guess                                                                                                                      ,                                                                                                                                                                                                                                         "
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "send guesses game 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{                                        \r\n  \"guessNumbers\": [8,0,6,1]\r\n}\r\n\r\n               ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/games/5/guess                                                                                                                      ,                                                                                                                                                                                                                                         ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"games",
+								"5",
+								"guess                                                                                                                      ,                                                                                                                                                                                                                                         "
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "send guesses game 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{                                        \r\n  \"guessNumbers\": [8,0,6,1]\r\n}\r\n\r\n               ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/games/5/guess                                                                                                                      ,                                                                                                                                                                                                                                         ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"games",
+								"5",
+								"guess                                                                                                                      ,                                                                                                                                                                                                                                         "
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "send guesses game 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{                                        \r\n  \"guessNumbers\": [8,0,6,1]\r\n}\r\n\r\n               ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/games/5/guess                                                                                                                      ,                                                                                                                                                                                                                                         ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"games",
+								"5",
+								"guess                                                                                                                      ,                                                                                                                                                                                                                                         "
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "15   send guesses game 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"guessNumbers\": [9,8,0,5]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/2/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"2",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16   send guesses game 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"guessNumbers\": [2,1,5,9]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/3/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"3",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17   send guess duplicate nums",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"guessNumbers\": [2,1,9,9]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/1/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"1",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18   send guess game not found",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"guessNumbers\": [2,1,9,9]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/20/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"20",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19   send guess game in-active",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"guessNumbers\": [2,1,9,3]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/7/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"7",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20   status game 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\":\"111111111\",\r\n    \"password\":\"Ocz1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21   status game 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\":\"111111111\",\r\n    \"password\":\"Ocz1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22   status game 3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerId\":\"111111111\",\r\n    \"password\":\"Ocz1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/games/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "23   finish game 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/games/1/end",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"games",
+						"1",
+						"end"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "24   last game for player 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"Ocz1234\",\r\n   \"email\":\"oritcz@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/players/111111111/recent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"111111111",
+						"recent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "25   leaderboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/players/best/leaderboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"players",
+						"best",
+						"leaderboard"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
